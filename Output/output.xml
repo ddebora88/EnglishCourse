@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on darwin)" generated="2024-02-26T06:28:30.824981" rpa="false" schemaversion="5">
+<suite id="s1" name="Authentication" source="/Users/apple/PycharmProjects/EnglishCourse/Testcase/Authentication.robot">
+<test id="s1-t1" name="Authentication" line="7">
+<kw name="Open English Course Application" owner="android-res">
+<msg time="2024-02-26T06:28:30.904387" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:30.904675" level="TRACE">Arguments: [ 'http://127.0.0.1:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.englishscore' | appActivity='com.englishscore.MainActivity' | automationName='UiAutomator2' ]</msg>
+<msg time="2024-02-26T06:28:30.904884" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'platformName': 'Android', 'appium:deviceName': 'emulator-5554', 'appium:appPackage': 'com.englishscore', 'appium:appActivity': 'com.englishscore.MainActivity', 'appium:automationName': 'UiAutomator2'}}}</msg>
+<msg time="2024-02-26T06:28:30.905105" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg time="2024-02-26T06:28:39.375552" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:39.376338" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"emulator-5554","appPackage":"com.englishscore","appActivity":"com.englishscore.MainActivity","automationName":"UiAutomator2"},"platformName":"Android","deviceName":"emulator-5554","appPackage":"com.englishscore","appActivity":"com.englishscore.MainActivity","automationName":"UiAutomator2","deviceUDID":"emulator-5554","deviceApiLevel":34,"platformVersion":"14","deviceScreenSize":"1080x2220","deviceScreenDensity":440,"deviceModel":"sdk_gphone64_arm64","deviceManufacturer":"Google","pixelRatio":2.75,"statBarHeight":66,"viewportRect":{"left":0,"top":66,"width":1080,"height":2088}},"sessionId":"c7d2f61d-af06-4229-8251-3475273e4e4d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '906', 'ETag': 'W/"38a-oogRIhg3/kCcipRqzUiDWBywiro"', 'Date': 'Sun, 25 Feb 2024 23:28:39 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:39.376577" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:39.394146" level="DEBUG">Opened application with session id c7d2f61d-af06-4229-8251-3475273e4e4d</msg>
+<msg time="2024-02-26T06:28:39.395284" level="TRACE">Return: 1</msg>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.englishscore</arg>
+<arg>appActivity=com.englishscore.MainActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-02-26T06:28:30.904617" elapsed="8.490866"/>
+</kw>
+<msg time="2024-02-26T06:28:39.396292" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:30.904321" elapsed="8.492012"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:39.397713" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]' ]</msg>
+<msg time="2024-02-26T06:28:39.398286" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:40.382673" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:40.382932" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:40 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:40.383030" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:40.584527" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.725595" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.727062" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000001e","ELEMENT":"00000000-0000-04fa-ffff-ffff0000001e"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-tbI7iRqf7MkUkUSxr+DE7kriZv0"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.727260" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.727523" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]
+xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]</msg>
+<msg time="2024-02-26T06:28:41.727611" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL1}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:39.397331" elapsed="2.330369"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.728957" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[2]' ]</msg>
+<msg time="2024-02-26T06:28:41.729701" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.775713" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.775789" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000021","ELEMENT":"00000000-0000-04fa-ffff-ffff00000021"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-MZJ6MHWLJ2deLcEwQPNPJEOhnl0"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.775824" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.775873" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[2]</msg>
+<msg time="2024-02-26T06:28:41.775963" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL2}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.728275" elapsed="0.047714"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.776193" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[3]' ]</msg>
+<msg time="2024-02-26T06:28:41.776294" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.806160" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.806233" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000024","ELEMENT":"00000000-0000-04fa-ffff-ffff00000024"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-XTKY2YseLIHLfF2gqjAQ9W6jYJ8"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.806265" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.806304" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[3]</msg>
+<msg time="2024-02-26T06:28:41.806318" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL3}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.776113" elapsed="0.030224"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.806582" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[4]' ]</msg>
+<msg time="2024-02-26T06:28:41.806771" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.829721" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.829917" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000027","ELEMENT":"00000000-0000-04fa-ffff-ffff00000027"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-/0L8v5XuTNCFzwUz7T6xwWUYRv4"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.830019" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.830127" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[4]</msg>
+<msg time="2024-02-26T06:28:41.830171" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL4}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.806450" elapsed="0.023778"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.830977" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[5]' ]</msg>
+<msg time="2024-02-26T06:28:41.831327" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.891819" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.891901" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000002a","ELEMENT":"00000000-0000-04fa-ffff-ffff0000002a"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-jKc6GfxTkXQ+G7ADJvd0ltKySJ0"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.891937" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.891978" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[5]</msg>
+<msg time="2024-02-26T06:28:41.891994" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL5}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.830769" elapsed="0.061246"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.892210" level="TRACE">Arguments: [ '//android.widget.ImageView[@resource-id="com.englishscore:id/btn_next"]' ]</msg>
+<msg time="2024-02-26T06:28:41.892306" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.ImageView[@resource-id="com.englishscore:id/btn_next"]'}</msg>
+<msg time="2024-02-26T06:28:41.921096" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.921264" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000001a","ELEMENT":"00000000-0000-04fa-ffff-ffff0000001a"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-3e3L+IdpGbkGXMk77FRpZbduqN0"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.921344" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.921432" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.englishscore:id/btn_next"]</msg>
+<msg time="2024-02-26T06:28:41.921467" level="TRACE">Return: None</msg>
+<arg>${HOME-NEXT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.892136" elapsed="0.029382"/>
+</kw>
+<kw name="Intro Page" owner="android-res">
+<msg time="2024-02-26T06:28:41.922538" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:41.922792" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[2]' ]</msg>
+<msg time="2024-02-26T06:28:41.924751" level="INFO">Clicking element '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[2]'.</msg>
+<msg time="2024-02-26T06:28:41.924982" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:41.944313" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:41.944482" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000021","ELEMENT":"00000000-0000-04fa-ffff-ffff00000021"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-MZJ6MHWLJ2deLcEwQPNPJEOhnl0"', 'Date': 'Sun, 25 Feb 2024 23:28:41 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:41.944565" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:41.944725" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000021/click {}</msg>
+<msg time="2024-02-26T06:28:42.017528" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000021/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:42.017739" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:42 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:42.017825" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:42.017931" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[2]</msg>
+<msg time="2024-02-26T06:28:42.017970" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL2}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:41.922690" elapsed="0.095328"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:42.018458" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[3]' ]</msg>
+<msg time="2024-02-26T06:28:42.020497" level="INFO">Clicking element '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[3]'.</msg>
+<msg time="2024-02-26T06:28:42.020707" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:42.385920" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:42.386273" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000024","ELEMENT":"00000000-0000-04fa-ffff-ffff00000024"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-XTKY2YseLIHLfF2gqjAQ9W6jYJ8"', 'Date': 'Sun, 25 Feb 2024 23:28:42 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:42.386465" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:42.386846" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000024/click {}</msg>
+<msg time="2024-02-26T06:28:42.916937" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000024/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:42.917152" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:42 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:42.917242" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:42.917467" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[3]</msg>
+<msg time="2024-02-26T06:28:42.917554" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL3}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:42.018295" elapsed="0.899392"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:42.918363" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[4]' ]</msg>
+<msg time="2024-02-26T06:28:42.920798" level="INFO">Clicking element '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[4]'.</msg>
+<msg time="2024-02-26T06:28:42.920975" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:42.960586" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:42.960756" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000027","ELEMENT":"00000000-0000-04fa-ffff-ffff00000027"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-/0L8v5XuTNCFzwUz7T6xwWUYRv4"', 'Date': 'Sun, 25 Feb 2024 23:28:42 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:42.960843" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:42.961233" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000027/click {}</msg>
+<msg time="2024-02-26T06:28:43.708202" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000027/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:43.708273" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:43 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:43.708307" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:43.708342" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[4]</msg>
+<msg time="2024-02-26T06:28:43.708356" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL4}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:42.918134" elapsed="0.790242"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:43.708532" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[5]' ]</msg>
+<msg time="2024-02-26T06:28:43.709219" level="INFO">Clicking element '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[5]'.</msg>
+<msg time="2024-02-26T06:28:43.709283" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:44.461816" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:44.461982" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000002a","ELEMENT":"00000000-0000-04fa-ffff-ffff0000002a"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-jKc6GfxTkXQ+G7ADJvd0ltKySJ0"', 'Date': 'Sun, 25 Feb 2024 23:28:44 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:44.462063" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:44.462198" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000002a/click {}</msg>
+<msg time="2024-02-26T06:28:44.499424" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000002a/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:44.499592" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:44 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:44.499669" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:44.499751" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[5]</msg>
+<msg time="2024-02-26T06:28:44.499788" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL5}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:43.708466" elapsed="0.791371"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:44.500198" level="TRACE">Arguments: [ 'com.englishscore:id/btn_sign_in' ]</msg>
+<msg time="2024-02-26T06:28:44.502098" level="INFO">Clicking element 'com.englishscore:id/btn_sign_in'.</msg>
+<msg time="2024-02-26T06:28:44.502262" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_sign_in'}</msg>
+<msg time="2024-02-26T06:28:45.263619" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:45.263853" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000001d","ELEMENT":"00000000-0000-04fa-ffff-ffff0000001d"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-9ukA04JXKWkYFYUWA4r9jZhXFhE"', 'Date': 'Sun, 25 Feb 2024 23:28:45 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:45.263948" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:45.264103" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000001d/click {}</msg>
+<msg time="2024-02-26T06:28:45.316099" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000001d/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:45.316293" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:45 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:45.316373" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:45.316454" level="INFO">criteria is com.englishscore:id/btn_sign_in</msg>
+<msg time="2024-02-26T06:28:45.316492" level="TRACE">Return: None</msg>
+<arg>${BUTTON-SIGNIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:44.500033" elapsed="0.816511"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:45.317014" level="TRACE">Arguments: [ 'com.englishscore:id/btn_auth_email' ]</msg>
+<msg time="2024-02-26T06:28:45.317323" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_auth_email'}</msg>
+<msg time="2024-02-26T06:28:45.376957" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:45.377134" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000003c","ELEMENT":"00000000-0000-04fa-ffff-ffff0000003c"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-TMHqBU1/gOvLcDV0OzMAd+hGt0Q"', 'Date': 'Sun, 25 Feb 2024 23:28:45 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:45.377218" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:45.377310" level="INFO">criteria is com.englishscore:id/btn_auth_email</msg>
+<msg time="2024-02-26T06:28:45.377348" level="TRACE">Return: None</msg>
+<arg>${HOME-SIGNIN-EMAIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:45.316832" elapsed="0.060566"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:45.377751" level="TRACE">Arguments: [ 'com.englishscore:id/btn_auth_email' ]</msg>
+<msg time="2024-02-26T06:28:45.379403" level="INFO">Clicking element 'com.englishscore:id/btn_auth_email'.</msg>
+<msg time="2024-02-26T06:28:45.379525" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_auth_email'}</msg>
+<msg time="2024-02-26T06:28:45.982487" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:45.982711" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000003c","ELEMENT":"00000000-0000-04fa-ffff-ffff0000003c"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-TMHqBU1/gOvLcDV0OzMAd+hGt0Q"', 'Date': 'Sun, 25 Feb 2024 23:28:45 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:45.982829" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:45.983008" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000003c/click {}</msg>
+<msg time="2024-02-26T06:28:46.033553" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000003c/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:46.033859" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:46 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:46.033944" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:46.034022" level="INFO">criteria is com.englishscore:id/btn_auth_email</msg>
+<msg time="2024-02-26T06:28:46.034057" level="TRACE">Return: None</msg>
+<arg>${HOME-SIGNIN-EMAIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:45.377594" elapsed="0.656513"/>
+</kw>
+<msg time="2024-02-26T06:28:46.034273" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:41.921947" elapsed="4.112359"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:46.036393" level="TRACE">Arguments: [ '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]' ]</msg>
+<msg time="2024-02-26T06:28:46.037681" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your ...'}</msg>
+<msg time="2024-02-26T06:28:46.210511" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:46.210687" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000004d","ELEMENT":"00000000-0000-04fa-ffff-ffff0000004d"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-UfGQ0YEXQdb0xRjhQ3Wo8eVAp+Q"', 'Date': 'Sun, 25 Feb 2024 23:28:46 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:46.210770" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:46.210865" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]</msg>
+<msg time="2024-02-26T06:28:46.210902" level="TRACE">Return: None</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:46.034604" elapsed="0.176352"/>
+</kw>
+<kw name="Signin with user" owner="android-res">
+<msg time="2024-02-26T06:28:46.213345" level="TRACE">Arguments: [ ${EMAIL}='ut.lela3@gmail.com' | ${PASSWORD}='Password!7' ]</msg>
+<kw name="Input user email" owner="android-res">
+<msg time="2024-02-26T06:28:46.213834" level="TRACE">Arguments: [ ${EMAIL}='ut.lela3@gmail.com' ]</msg>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:46.214095" level="TRACE">Arguments: [ '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]' ]</msg>
+<msg time="2024-02-26T06:28:46.214375" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your ...'}</msg>
+<msg time="2024-02-26T06:28:47.324480" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:47.324649" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000004d","ELEMENT":"00000000-0000-04fa-ffff-ffff0000004d"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-UfGQ0YEXQdb0xRjhQ3Wo8eVAp+Q"', 'Date': 'Sun, 25 Feb 2024 23:28:47 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:47.324730" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:47.324827" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]</msg>
+<msg time="2024-02-26T06:28:47.324863" level="TRACE">Return: None</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:46.213998" elapsed="1.110913"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:47.325347" level="TRACE">Arguments: [ '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]' | 'ut.lela3@gmail.com' ]</msg>
+<msg time="2024-02-26T06:28:47.344241" level="INFO">Typing text 'ut.lela3@gmail.com' into text field '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]'</msg>
+<msg time="2024-02-26T06:28:47.344595" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your ...'}</msg>
+<msg time="2024-02-26T06:28:47.374209" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:47.374281" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000004d","ELEMENT":"00000000-0000-04fa-ffff-ffff0000004d"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-UfGQ0YEXQdb0xRjhQ3Wo8eVAp+Q"', 'Date': 'Sun, 25 Feb 2024 23:28:47 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:47.374313" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:47.374390" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000004d/value {'text': 'ut.lela3@gmail.com', 'value': ['u', 't', '.', 'l', 'e', 'l', 'a', '3', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}</msg>
+<msg time="2024-02-26T06:28:47.408781" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000004d/value HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:47.408992" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:47 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:47.409071" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:47.409150" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter your email address"]</msg>
+<msg time="2024-02-26T06:28:47.409186" level="TRACE">Return: None</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:47.325158" elapsed="0.084075"/>
+</kw>
+<msg time="2024-02-26T06:28:47.409323" level="TRACE">Return: None</msg>
+<arg>${EMAIL}</arg>
+<status status="PASS" start="2024-02-26T06:28:46.213638" elapsed="1.195715"/>
+</kw>
+<kw name="Input user password" owner="android-res">
+<msg time="2024-02-26T06:28:47.409829" level="TRACE">Arguments: [ ${PASSWORD}='Password!7' ]</msg>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:47.410552" level="TRACE">Arguments: [ '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter a password (8+ characters)"]' | 'Password!7' ]</msg>
+<msg time="2024-02-26T06:28:47.414172" level="INFO">Typing text 'Password!7' into text field '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter a password (8+ characters)"]'</msg>
+<msg time="2024-02-26T06:28:47.414465" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter a pas...'}</msg>
+<msg time="2024-02-26T06:28:48.040338" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:48.040507" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff0000005c","ELEMENT":"00000000-0000-04fa-ffff-ffff0000005c"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-ugRQwgTecJBDPEFrySrCnRGzLxI"', 'Date': 'Sun, 25 Feb 2024 23:28:48 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:48.040588" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:48.040745" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000005c/value {'text': 'Password!7', 'value': ['P', 'a', 's', 's', 'w', 'o', 'r', 'd', '!', '7']}</msg>
+<msg time="2024-02-26T06:28:48.069095" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff0000005c/value HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:48.069262" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:48 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:48.069341" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:48.069459" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.englishscore:id/boxed_text_input" and @text="enter a password (8+ characters)"]</msg>
+<msg time="2024-02-26T06:28:48.069507" level="TRACE">Return: None</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:47.410409" elapsed="0.659151"/>
+</kw>
+<msg time="2024-02-26T06:28:48.069712" level="TRACE">Return: None</msg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-02-26T06:28:47.409560" elapsed="0.660245"/>
+</kw>
+<kw name="Submit Login" owner="android-res">
+<msg time="2024-02-26T06:28:48.070278" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:48.070507" level="TRACE">Arguments: [ 'com.englishscore:id/btn_sign_in' ]</msg>
+<msg time="2024-02-26T06:28:48.072225" level="INFO">Clicking element 'com.englishscore:id/btn_sign_in'.</msg>
+<msg time="2024-02-26T06:28:48.072460" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_sign_in'}</msg>
+<msg time="2024-02-26T06:28:48.678774" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:48.678947" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000067","ELEMENT":"00000000-0000-04fa-ffff-ffff00000067"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-ClsRSI+gstczhoCIBnLCd18tbq4"', 'Date': 'Sun, 25 Feb 2024 23:28:48 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:48.679033" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:48.679200" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000067/click {}</msg>
+<msg time="2024-02-26T06:28:48.716409" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000067/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:48.716623" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:48 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:48.716729" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:48.716843" level="INFO">criteria is com.englishscore:id/btn_sign_in</msg>
+<msg time="2024-02-26T06:28:48.720376" level="TRACE">Return: None</msg>
+<arg>${BUTTON-SIGNIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:48.070408" elapsed="0.650072"/>
+</kw>
+<msg time="2024-02-26T06:28:48.720584" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:48.070057" elapsed="0.650559"/>
+</kw>
+<kw name="Verify Login Is Successful" owner="android-res">
+<msg time="2024-02-26T06:28:48.721144" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:48.721433" level="TRACE">Arguments: [ 'com.englishscore:id/btn_menu' ]</msg>
+<msg time="2024-02-26T06:28:48.721775" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:48.845400" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:48.845925" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:48 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:48.846106" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:49.062160" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:49.861870" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:49.862219" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:49 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:49.862327" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:50.067860" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:50.556784" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:50.557121" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:50 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:50.557208" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:50.761225" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:50.791001" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:50.791177" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:50 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:50.791258" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:50.993433" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:51.009387" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:51.009468" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:51 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:51.009505" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:51.215164" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:51.223954" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:51.224115" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:51 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:51.224194" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:51.428180" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:51.442307" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:51.442483" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:51 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:51.442566" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:51.645466" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:51.693793" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:51.693874" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:51 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:51.693911" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:51.898548" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:51.909223" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:51.909389" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:51 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:51.909468" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:52.109973" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:52.386404" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:52.386623" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:52 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:52.386728" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:52.588576" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:53.184885" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:53.185148" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000091","ELEMENT":"00000000-0000-04fa-ffff-ffff00000091"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-0X3qqg3KzIWI2+F97urp999cvow"', 'Date': 'Sun, 25 Feb 2024 23:28:53 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:53.185232" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:53.185731" level="INFO">criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu
+criteria is com.englishscore:id/btn_menu</msg>
+<msg time="2024-02-26T06:28:53.185876" level="TRACE">Return: None</msg>
+<arg>${HAMBURGER-MENU}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:48.721313" elapsed="4.464873"/>
+</kw>
+<msg time="2024-02-26T06:28:53.186731" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:48.720841" elapsed="4.465930"/>
+</kw>
+<msg time="2024-02-26T06:28:53.187422" level="TRACE">Return: None</msg>
+<arg>${USER1-DETAILS}[email]</arg>
+<arg>${USER1-DETAILS}[password]</arg>
+<status status="PASS" start="2024-02-26T06:28:46.212243" elapsed="6.975214"/>
+</kw>
+<kw name="Logout with user (CANCEL)" owner="android-res">
+<msg time="2024-02-26T06:28:53.188966" level="TRACE">Arguments: [  ]</msg>
+<kw name="Go to Main Menu" owner="android-res">
+<msg time="2024-02-26T06:28:53.189232" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:53.189565" level="TRACE">Arguments: [ 'com.englishscore:id/btn_menu' ]</msg>
+<msg time="2024-02-26T06:28:53.193040" level="INFO">Clicking element 'com.englishscore:id/btn_menu'.</msg>
+<msg time="2024-02-26T06:28:53.193329" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:53.227810" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:53.227881" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000091","ELEMENT":"00000000-0000-04fa-ffff-ffff00000091"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-0X3qqg3KzIWI2+F97urp999cvow"', 'Date': 'Sun, 25 Feb 2024 23:28:53 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:53.227913" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:53.227973" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000091/click {}</msg>
+<msg time="2024-02-26T06:28:53.286230" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000091/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:53.286449" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:53 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:53.286536" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:53.286620" level="INFO">criteria is com.englishscore:id/btn_menu</msg>
+<msg time="2024-02-26T06:28:53.286659" level="TRACE">Return: None</msg>
+<arg>${HAMBURGER-MENU}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:53.189420" elapsed="0.097292"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:53.287143" level="TRACE">Arguments: [ 'com.englishscore:id/tv_logout' ]</msg>
+<msg time="2024-02-26T06:28:53.287458" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:53.473398" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:53.473566" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:53 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:53.473650" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:53.677214" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:54.211493" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:54.212813" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fc-ffff-ffff000000d2","ELEMENT":"00000000-0000-04fc-ffff-ffff000000d2"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-PL8YXQFCwHi3yJ9eCuD3icY50lU"', 'Date': 'Sun, 25 Feb 2024 23:28:54 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:54.212923" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:54.213025" level="INFO">criteria is com.englishscore:id/tv_logout
+criteria is com.englishscore:id/tv_logout</msg>
+<msg time="2024-02-26T06:28:54.213062" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-MENU}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:53.286935" elapsed="0.926176"/>
+</kw>
+<msg time="2024-02-26T06:28:54.213207" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:53.189109" elapsed="1.024129"/>
+</kw>
+<kw name="Click the Logout and cancel" owner="android-res">
+<msg time="2024-02-26T06:28:54.213702" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:54.213930" level="TRACE">Arguments: [ 'com.englishscore:id/tv_logout' ]</msg>
+<msg time="2024-02-26T06:28:54.215587" level="INFO">Clicking element 'com.englishscore:id/tv_logout'.</msg>
+<msg time="2024-02-26T06:28:54.215726" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:54.229099" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:54.229271" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fc-ffff-ffff000000d2","ELEMENT":"00000000-0000-04fc-ffff-ffff000000d2"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-PL8YXQFCwHi3yJ9eCuD3icY50lU"', 'Date': 'Sun, 25 Feb 2024 23:28:54 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:54.229356" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:54.229488" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fc-ffff-ffff000000d2/click {}</msg>
+<msg time="2024-02-26T06:28:54.265050" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fc-ffff-ffff000000d2/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:54.265369" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:54 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:54.265460" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:54.265608" level="INFO">criteria is com.englishscore:id/tv_logout</msg>
+<msg time="2024-02-26T06:28:54.265651" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-MENU}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:54.213832" elapsed="0.051871"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:54.266123" level="TRACE">Arguments: [ 'android:id/button2' ]</msg>
+<msg time="2024-02-26T06:28:54.268582" level="INFO">Clicking element 'android:id/button2'.</msg>
+<msg time="2024-02-26T06:28:54.268856" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'android:id/button2'}</msg>
+<msg time="2024-02-26T06:28:54.541418" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:54.541580" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fd-ffff-ffff000000ea","ELEMENT":"00000000-0000-04fd-ffff-ffff000000ea"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-o2x8QSu5i748JybcqvohlKCkGCM"', 'Date': 'Sun, 25 Feb 2024 23:28:54 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:54.541661" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:54.541783" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fd-ffff-ffff000000ea/click {}</msg>
+<msg time="2024-02-26T06:28:54.949928" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fd-ffff-ffff000000ea/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:54.950141" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:54 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:54.950235" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:54.950316" level="INFO">criteria is android:id/button2</msg>
+<msg time="2024-02-26T06:28:54.950353" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-CANCEL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:54.265961" elapsed="0.684441"/>
+</kw>
+<msg time="2024-02-26T06:28:54.950495" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:54.213486" elapsed="0.737041"/>
+</kw>
+<kw name="Verify Logout is not successful" owner="android-res">
+<msg time="2024-02-26T06:28:54.950972" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:54.951213" level="TRACE">Arguments: [ 'com.englishscore:id/btn_menu' ]</msg>
+<msg time="2024-02-26T06:28:54.951466" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:55.264255" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:55.264337" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000091","ELEMENT":"00000000-0000-04fa-ffff-ffff00000091"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-0X3qqg3KzIWI2+F97urp999cvow"', 'Date': 'Sun, 25 Feb 2024 23:28:55 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:55.264374" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:55.264416" level="INFO">criteria is com.englishscore:id/btn_menu</msg>
+<msg time="2024-02-26T06:28:55.264429" level="TRACE">Return: None</msg>
+<arg>${HAMBURGER-MENU}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:54.951103" elapsed="0.313349"/>
+</kw>
+<msg time="2024-02-26T06:28:55.264508" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:54.950744" elapsed="0.313776"/>
+</kw>
+<msg time="2024-02-26T06:28:55.264536" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:53.188397" elapsed="2.076148"/>
+</kw>
+<kw name="Logout with user (OK)" owner="android-res">
+<msg time="2024-02-26T06:28:55.264822" level="TRACE">Arguments: [  ]</msg>
+<kw name="Go to Hamburger Menu" owner="android-res">
+<msg time="2024-02-26T06:28:55.264951" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:55.265047" level="TRACE">Arguments: [ 'com.englishscore:id/btn_menu' ]</msg>
+<msg time="2024-02-26T06:28:55.265672" level="INFO">Clicking element 'com.englishscore:id/btn_menu'.</msg>
+<msg time="2024-02-26T06:28:55.265736" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/btn_menu'}</msg>
+<msg time="2024-02-26T06:28:55.525555" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:55.525728" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000091","ELEMENT":"00000000-0000-04fa-ffff-ffff00000091"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-0X3qqg3KzIWI2+F97urp999cvow"', 'Date': 'Sun, 25 Feb 2024 23:28:55 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:55.525816" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:55.525946" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000091/click {}</msg>
+<msg time="2024-02-26T06:28:55.567226" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fa-ffff-ffff00000091/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:55.567404" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:55 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:55.567481" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:55.567559" level="INFO">criteria is com.englishscore:id/btn_menu</msg>
+<msg time="2024-02-26T06:28:55.567594" level="TRACE">Return: None</msg>
+<arg>${HAMBURGER-MENU}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:55.265005" elapsed="0.302638"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:55.570030" level="TRACE">Arguments: [ 'com.englishscore:id/tv_logout' ]</msg>
+<msg time="2024-02-26T06:28:55.570375" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:55.711630" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:55.711804" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:55 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:55.711889" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:55.914027" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:56.420950" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:56.421220" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fe-ffff-ffff000000f8","ELEMENT":"00000000-0000-04fe-ffff-ffff000000f8"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-Oqy2NBTtBDXs0TMFrKiGiS8DUEQ"', 'Date': 'Sun, 25 Feb 2024 23:28:56 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:56.421319" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:56.421444" level="INFO">criteria is com.englishscore:id/tv_logout
+criteria is com.englishscore:id/tv_logout</msg>
+<msg time="2024-02-26T06:28:56.421480" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-MENU}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:55.569797" elapsed="0.851731"/>
+</kw>
+<msg time="2024-02-26T06:28:56.421618" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:55.264898" elapsed="1.156751"/>
+</kw>
+<kw name="Click the Logout button" owner="android-res">
+<msg time="2024-02-26T06:28:56.422080" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:56.422331" level="TRACE">Arguments: [ 'com.englishscore:id/tv_logout' ]</msg>
+<msg time="2024-02-26T06:28:56.424468" level="INFO">Clicking element 'com.englishscore:id/tv_logout'.</msg>
+<msg time="2024-02-26T06:28:56.424612" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'com.englishscore:id/tv_logout'}</msg>
+<msg time="2024-02-26T06:28:56.439383" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:56.439550" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fe-ffff-ffff000000f8","ELEMENT":"00000000-0000-04fe-ffff-ffff000000f8"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-Oqy2NBTtBDXs0TMFrKiGiS8DUEQ"', 'Date': 'Sun, 25 Feb 2024 23:28:56 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:56.439630" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:56.439751" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fe-ffff-ffff000000f8/click {}</msg>
+<msg time="2024-02-26T06:28:56.484226" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04fe-ffff-ffff000000f8/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:56.486289" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:56 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:56.486503" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:56.487038" level="INFO">criteria is com.englishscore:id/tv_logout</msg>
+<msg time="2024-02-26T06:28:56.487091" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-MENU}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:56.422217" elapsed="0.064965"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:56.487555" level="TRACE">Arguments: [ 'android:id/button1' ]</msg>
+<msg time="2024-02-26T06:28:56.489293" level="INFO">Clicking element 'android:id/button1'.</msg>
+<msg time="2024-02-26T06:28:56.489436" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'id', 'value': 'android:id/button1'}</msg>
+<msg time="2024-02-26T06:28:57.071550" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:57.071826" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04ff-ffff-ffff00000111","ELEMENT":"00000000-0000-04ff-ffff-ffff00000111"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-pHVdtNjb0lwSNBWqsiGLI3279s4"', 'Date': 'Sun, 25 Feb 2024 23:28:57 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:57.071994" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:57.072264" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04ff-ffff-ffff00000111/click {}</msg>
+<msg time="2024-02-26T06:28:57.115549" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/element/00000000-0000-04ff-ffff-ffff00000111/click HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:57.115837" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 25 Feb 2024 23:28:57 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:57.115925" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:57.116010" level="INFO">criteria is android:id/button1</msg>
+<msg time="2024-02-26T06:28:57.116047" level="TRACE">Return: None</msg>
+<arg>${LOGOUT-OK}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-26T06:28:56.487394" elapsed="0.628721"/>
+</kw>
+<msg time="2024-02-26T06:28:57.116213" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:56.421878" elapsed="0.694370"/>
+</kw>
+<kw name="Verify Logout is successful" owner="android-res">
+<msg time="2024-02-26T06:28:57.116728" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-26T06:28:57.116994" level="TRACE">Arguments: [ '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]' ]</msg>
+<msg time="2024-02-26T06:28:57.117241" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:57.427791" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:57.427961" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Sun, 25 Feb 2024 23:28:57 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:57.428119" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:57.633280" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements {'using': 'xpath', 'value': '//android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget....'}</msg>
+<msg time="2024-02-26T06:28:59.190844" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/c7d2f61d-af06-4229-8251-3475273e4e4d/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-02-26T06:28:59.191695" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04fa-ffff-ffff00000127","ELEMENT":"00000000-0000-04fa-ffff-ffff00000127"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-14hv6FXi3Zw63QzUuzHl7nfGd3A"', 'Date': 'Sun, 25 Feb 2024 23:28:59 GMT', 'Connection': 'keep-alive'})</msg>
+<msg time="2024-02-26T06:28:59.191788" level="DEBUG">Finished Request</msg>
+<msg time="2024-02-26T06:28:59.191936" level="INFO">xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]
+xpath criteria: //android.widget.HorizontalScrollView[@resource-id="com.englishscore:id/tab_layout"]/android.widget.LinearLayout/android.widget.LinearLayout[1]</msg>
+<msg time="2024-02-26T06:28:59.191989" level="TRACE">Return: None</msg>
+<arg>${HOME-DETAIL1}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-26T06:28:57.116883" elapsed="2.075193"/>
+</kw>
+<msg time="2024-02-26T06:28:59.192244" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:57.116514" elapsed="2.075764"/>
+</kw>
+<msg time="2024-02-26T06:28:59.192343" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-02-26T06:28:55.264677" elapsed="3.927697"/>
+</kw>
+<status status="PASS" start="2024-02-26T06:28:30.904099" elapsed="28.288645"/>
+</test>
+<status status="PASS" start="2024-02-26T06:28:30.825924" elapsed="28.368495"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Authentication">Authentication</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
